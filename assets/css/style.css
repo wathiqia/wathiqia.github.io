@@ -9,23 +9,61 @@ body {
 main{
   max-width: 1280px;
   margin: auto;
+  margin-top: 2rem;
 }
 header nav a {
   color: #fff;
   text-decoration: none;
   font-size: 14px;
 }
+
+
 .site-header {
   text-align: center;
   background: #008070;
   color: #fff;
   padding: 20px;
+  position: relative;
 }
 
 .site-header h1 {
-  margin: 0;
   font-size: 2em;
 }
+.site-header h1,p {
+  margin: 2rem 0;
+}
+.site-header .search-header{
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(95, 95, 95, 0.25);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  width: 80%;
+  min-width: 300px;
+  max-width: 620px;
+  display: flex;
+}
+.search-header input{
+  direction: rtl;
+  padding: 0.75rem 1rem;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.search-header label{
+  background-image: url('../icons/search-icon.svg');
+  background-repeat: no-repeat;
+  padding: 1.25rem;
+  background-position-x: start;
+  background-position-y: center;
+  background-size: 1.5rem;
+}
+
+
 
 .categories {
   display: grid;
